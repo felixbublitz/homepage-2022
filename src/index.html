@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../src/main.js"></script>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+  <img class="hidden" id="avatar" src="../res/avatar.png">
+  <img class="hidden" id="eye" src="../res/eye.png">
+  
+  <div id="header" class="h-screen">
+
+    <div class="absolute overflow-hidden w-full h-full">
+      <div class=" bg-cover sm-bg-left w-[110%] -ml-4 bg-cover h-[110%] blur-lg bg-[url('../res/header-image.jpg')]"></div>
+    </div>
+
+
+    <div class="absolute w-full bottom-8 sm:bottom-12  opacity-40 sm:opacity-50 text-center text-white ">
+      <p class="xl:mb-8 mb-4 sm:mb-4">Nach unten scrollen</p>
+      <img class="mx-auto w-[32px] sm:w-[48px]  animate-bounce" src="../res/scroll-down.png">
+
+    </div>
+
+ 
+    <div class="absolute flex h-full w-full overflow-hidden opacity-40 blur-sm">
+      <div class="relative m-auto w-[457px] overflow-visible ">
+        <div
+          class="sm-bg-left bg-contain sm:w-[1500px] sm:h-[500px] w-[1500px] h-[500px] sm:ml-[270px] sm:mt-[10px] xl:ml-[0px] xl:mt-[150px] ml-[190px] mt-[-50px]  bg-[url('../res/header-shaddow.png')]">
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute w-full h-full">
+      <ul class="mt-8 mr-4 list-none text-right">
+        <a href="https://www.xing.com/profile/Felix_Bublitz/" target="_blank">
+          <li class="cursor-pointer w-12  inline-block sm:mx-1 mx-1 opacity-40 hover:opacity-70"><img src="../res/contact-xing.svg"></li>
+        </a>
+        <a href="https://www.linkedin.com/in/felix-bublitz-076566203/" target="_blank">
+          <li class="cursor-pointer w-12  inline-block sm:mx-1 mx-1 opacity-40 hover:opacity-70"><img src="../res/contact-linkedin.png"></li>
+        </a>
+
+        <a href="mailto:admin@felixbublitz.de" target="_blank">
+          <li class="cursor-pointer w-12  inline-block sm:mx-1 mx-1 opacity-40 hover:opacity-70"><img src="../res/contact-mail.png"></li>
+        </a>
+      </ul>
+    </div>
+
+
+    <div class="flex h-full">
+      <div class="xl:text-black text-white flex flex-wrap relative m-auto ">
+
+
+        <div class="relative basis-full xl:basis-1/4 m-auto flex-1 w-full h-full ">
+          <canvas class="mx-auto  w-96 xl:w-full" width="600px" height="400px" id="eyes"></canvas>
+
+        </div>
+
+        <div class="text-center xl:text-left xl:basis-1/4 flex-1 my-auto">
+          <p class="xl:text-7xl text-5xl sm-text-7xl font-exo font-bold mt-8">Hey,</p>
+          <p id="cur" class="xl:text-7xl text-3xl sm-text-7xl mt-4 sm:mt-4 text-4xl font-exo font-light">ich bin Felix
+          </p>
+          <p class="xl:text-2xl xl:mt-4 text-xl sm-text-2xl mt-8 sm:mt-4 text-4xl font-dosis">Softwareentwickler&nbsp;&nbsp;–&nbsp;&nbsp;UX-Designer&nbsp;&nbsp;–&nbsp;&nbsp;Enthusiast</p>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+</div>
+
+
+<div id="content1" class="xl:py-32 py-4 h-full  text-center ">
+
+  <h2 class="text-2xl text-neutral-500 font-exo xl:my-8 mt-4 text-gray-700 xl:mb-16">Ausbildung</h2>
+
+  <ul class="text-left list-none list-none m-auto sm:text-center  w-full xl:w-[1200px]">
+    
+    <li class="inline-block md:w-[30%] m-auto sm:w-3/4 px-8 sm:p-0 w-full py-4 ">
+      <div class="md:items-center justify-items-center w-full flex flex-wrap ">
+      
+      <div class="text-center md:mb-4 md:w-full mr-4 md:mr-0">
+        <p class="opacity-0 md:inline md:px-2 md:align-middle text-gray-400 text-xs">0000</p>
+        <div class="md:inline-block md:align-middle   md:h-8 md:w-32  lg:h-8 lg:w-52 rounded-xl bg-neutral-700 h-32 w-6 my-2" ></div>
+        <p class="md:inline md:px-2 md:align-middle text-gray-400 text-xs">2014</p>
+      </div>
+
+      <div class="m-auto basis-[calc(100%-46px)] mt-[24px]">
+        <div class="rounded-md relative bg-white px-8 py-6">
+          <p class="text-2xl font-exo  mb-1">Abitur</p>
+          <p class="text-1xl font-dosis">Schwerpunkt: Physik/ Chemie</p>
+          <p class="text-1xl font-dosis">Hamburg</p>
+        </div>
+      </div>
+</div>
+    </li>
+
+
+    <li class=" inline-block md:w-[30%] sm:w-3/4 px-8 sm:p-0  w-full py-4 ">
+      <div class="md:items-center justify-items-center w-full flex flex-wrap ">
+      
+        <div class="text-center md:mb-4 md:w-full mr-4 md:mr-0">
+        <p class="md:inline md:px-2 md:align-middle text-gray-400 text-xs">2015</p>
+        <div class="md:inline-block md:align-middle md:h-8 md:w-32  lg:h-8 lg:w-52 rounded-xl bg-lime-600 h-32 w-6 my-2" ></div>
+        <p class="md:inline md:px-2 md:align-middle text-gray-400 text-xs">2019</p>
+      </div>
+
+      <div class="m-auto basis-[calc(100%-46px)]  mt-[24px]">
+        <div class="rounded-md relative bg-white px-8 py-6">
+          <p class="text-2xl font-exo  mb-1">Bachelor</p>
+          <p class="text-1xl font-dosis">Informatik</p>
+          <p class="text-1xl font-dosis">TU Berlin</p>
+        </div>
+      </div>
+</div>
+    </li>
+
+
+    <li class=" inline-block sm:w-3/4  px-8 sm:p-0 w-full md:w-[30%] py-4 ">
+      <div class="md:items-center justify-items-center w-full flex flex-wrap ">
+      
+        <div class="text-center  md:mb-4 md:w-full mr-4 md:mr-0">
+        <p class="md:inline md:px-2 md:align-middle text-gray-400 text-xs">2019</p>
+        <div class="md:inline-block md:align-middle  md:h-8 md:w-32  lg:h-8 lg:w-52  rounded-xl bg-neutral-700 h-32 w-6 my-2" ></div>
+        <p class="md:inline md:px-2 md:align-middle text-gray-400 text-xs">2022</p>
+      </div>
+
+      <div class="m-auto basis-[calc(100%-46px)] mt-[24px]">
+        <div class="rounded-md relative bg-white px-8 py-6">
+          <p class="text-2xl font-exo  mb-1">Master</p>
+          <p class="text-1xl font-dosis">Computer Science</p>
+          <p class="text-1xl font-dosis">TU Berlin</p>
+        </div>
+      </div>
+</div>
+    </li>
+    
+
+   
+  </ul>
+ 
+
+</div>
+
+
+<div id="content1" class="py-8 xl:px-32  text-center bg-white">
+
+  <h2 class="text-3xl font-exo my-8 text-gray-700">Skills</h2>
+  <ul class="list-none xl:mt-8 list-none m-auto xl:w-1/2">
+
+
+      <li class="hover:scale-105 duration-800 transform transition inline-block px-2 py-4 xl:p-4">
+        <img class="shadow-lg sm:w-32 xl:w-42 w-20 mb-2 xl:mb-4" src="../res/thumb-figma.png">
+        <p class="xl:text-xl text-sm text-gray-500">Figma</p>
+      </li>
+ 
+      <li class="hover:scale-105 duration-800 transform transition inline-block px-2 py-4 xl:p-4">
+        <img class="shadow-lg sm:w-32 xl:w-42 w-20 mb-2 xl:mb-4" src="../res/thumb-js.png">
+        <p class="xl:text-xl text-sm text-gray-500">JavaScript</p>
+      </li>
+
+      <li class="hover:scale-105 duration-800 transform transition inline-block px-2 py-4 xl:p-4">
+        <img class="shadow-lg sm:w-32 xl:w-42 w-20 mb-2 xl:mb-4" src="../res/thumb-php.png">
+        <p class="xl:text-xl text-sm text-gray-500">PHP</p>
+      </li>
+
+     
+      <li class="hover:scale-105 duration-800 transform transition inline-block px-2 py-4 xl:p-4">
+        <img class="shadow-lg sm:w-32 xl:w-42 w-20 mb-2 xl:mb-4" src="../res/thumb-njs.png">
+        <p class="xl:text-xl text-sm text-gray-500">Node.js</p>
+      </li>
+ 
+      <li class="hover:scale-105 duration-800 transform transition inline-block px-2 py-4 xl:p-4">
+        <img class="shadow-lg sm:w-32 xl:w-42 w-20 mb-2 xl:mb-4" src="../res/thumb-java.png">
+        <p class="xl:text-xl text-sm text-gray-500">Java</p>
+      </li>
+
+      <li class="hover:scale-105 duration-400 transform transition inline-block px-2 py-4 xl:p-4">
+        <img class="shadow-lg sm:w-32 xl:w-42 w-20 mb-2 xl:mb-4" src="../res/thumb-cs.png">
+        <p class="xl:text-xl text-sm text-gray-500">C#</p>
+      </li>
+
+      <li class="hover:scale-105 duration-800 transform transition inline-block px-2 py-4 xl:p-4">
+        <img class="shadow-lg sm:w-32 xl:w-42 w-20 mb-2 xl:mb-4" src="../res/thumb-css.png">
+        <p class="xl:text-xl text-sm text-gray-500">CSS</p>
+      </li>
+      
+      </ul>
+
+    </div>
+
+
+    
+<div id="content-projects" class="bg-[url('../res/blueprint-bg.jpg')] bg-repeat	bg-[length:40px] py-16 w-full px-8  m-auto text-center">
+
+  <h2 class="text-3xl font-exo my-2 text-white">Projekte</h2>
+
+
+
+
+<div class="inline-block sm:px-0 shadow-sm hover:-translate-y-1 duration-400 transform transition sm:w-5/6  md:w-[40%] w-full  my-16">
+  
+  <div class="relative  py-4 xl:py-10 xl:pl-[150px] sm:pl-40 md:py-8 px-8 xl:pl-16 md:pl-[200px] text-white rounded-xl xl:text-left">
+    <p class="md:text-xl xl:text-xl text-xs font-dosis font-light mb-1">Web App</p>
+    <p class="md:text-4xl xl:text-4xl text-2xl font-londrina">DrinkIT</p>
+    
+    <img class="w-4/6 xl:w-[300px]  top-[80px] xl:-bottom-24 left-[64px] xl:left-[calc(50%-200px)]" src="../res/drinkit-img1.png">
+    
+  </div>
+
+  <div class="rounded-lg mt-4 text-white -mt-8 pt-24 xl:pt-36 px-8 pb-8">
+    <p>
+      Mit DrinkIt! wird deine Party garantiert zum Highlight!
+      Messe dich mit deinen Freunden in verschiedenen Herausforderungen und hüte dich vor der Bestrafung!
+    </p>
+    <ul class="mt-4">
+      <li>• Spiele gleichzeitig mit 12 deiner Freunde</li>
+      <li>• Beweise dich in 5 unterschiedlichen Herausforderungen</li>
+      <li>• Kompatibel mit Android und iOS</li>
+    </ul>
+    </div>
+
+ 
+</div>
+
+
+
+
+    </div>
+
+
+
+    <div id="contact" class="bg-white py-24">
+
+     
+  
+  
+  
+    
+  
+  
+      <div class="flex p-4 sm:w-2/3 sm:m-auto md:w-full">
+        <div class="xl:text-black text-white flex flex-wrap relative m-auto ">
+  
+  
+          <div class="relative basis-full xl:basis-[300px]  ">
+            <img class="m-auto w-48 md:w-64" src="../res/avatar2.png">
+  
+          </div>
+  
+          <div class="text-center xl:text-left flex-1  xl:w-[600px]  my-auto mt-4">
+            <div class="rounded-lg relative bg-lime-500 px-8 py-4">
+              <div class="absolute w-0 h-0   md:top-[42px] md:-left-[40px] -top-[18px] left-[100px] border-t-[20px] border-t-transparent border-b-[20px] border-b-transparent md:border-r-[70px] border-r-[50px] border-r-lime-500 rotate-80 md:-rotate-[30deg]"></div>
+              <p class="text-white text-1xl md:text-2xl font-exo md:p-2 mb-1">Hast du noch Fragen?</p>
+            </div>
+            <form class="text-neutral-500 text-left">
+              <div class="my-4 w-full ">
+                <p class="mb-1">Name</p>
+                <input class="rounded-sm p-2 w-full">
+              </div>
+              
+              <div class="my-4 w-full">
+                <p class="mb-1">E-Mail</p>
+                <input class="rounded-sm p-2 w-full">
+              </div>
+
+              <div  class="my-4 w-full">
+                <p class="mb-1">Nachricht</p>
+                <textarea class="rounded-sm p-2 w-full"></textarea> 
+              </div>
+
+              <div  class="my-4 w-full">
+                <input class="rounded-sm text-white p-2 bg-lime-600 w-full" type="submit">
+              </div>
+              
+            </form>
+          </div>
+
+        
+        </div>
+  
+  
+      </div>
+  
+  
+  </div>
+
+
+       
+<div id="footer" class="flex text-white bg-neutral-600 p-8 w-full  text-left ">
+ 
+  
+<div class="w-1/2 m-auto opacity-40">
+  <p>Felix Bublitz</p>
+  <p>Friedelstraße 61</p>
+  <p>12047 Berlin</p>
+  <p>+49 15731406095</p>
+  
+</div>
+
+<div  class="w-1/2 m-auto text-right">
+  <p class="mb-4 opacity-40">Kontakt</p>
+    <ul class="list-none ">
+      <a href="https://www.xing.com/profile/Felix_Bublitz/" target="_blank">
+        <li class="cursor-pointer w-10  inline-block   opacity-40 hover:opacity-50"><img src="../res/contact-xing.svg"></li>
+      </a>
+      <a href="https://www.linkedin.com/in/felix-bublitz-076566203/" target="_blank">
+        <li class="cursor-pointer w-10  inline-block sm:mx-1  opacity-40 hover:opacity-50"><img src="../res/contact-linkedin.png"></li>
+      </a>
+
+      <a href="mailto:admin@felixbublitz.de" target="_blank">
+        <li class="cursor-pointer w-10  inline-block  opacity-40 hover:opacity-50"><img src="../res/contact-mail.png"></li>
+      </a>
+    </ul>
+  </div>
+
+
+  
+
+</div>
+
+<div id="footer2" class="flex text-white bg-neutral-800 p-3 w-full  text-left ">
+ 
+<div class="text-center w-full m-auto opacity-70">
+  <p>© 2022 | Felix Bublitz</p>
+  
+</div>
+</div>
+ 
+
+</body>
+
+</html>
