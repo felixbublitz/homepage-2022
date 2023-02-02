@@ -4,6 +4,32 @@ var posy;
 var winy;
 var winx;
 
+let shadowLength = 20;
+
+let elements = document.querySelectorAll('.t-shadow');
+let shadow = '';
+
+for(let i=0; i<shadowLength; i++){
+  shadow += (shadow? ',':'') + i*1+'px ' + i*1+'px 0 #00000005';
+}
+
+elements.forEach(b => {
+  b.style.textShadow = shadow;
+
+});
+
+elements = document.querySelectorAll('.b-shadow');
+shadow = '';
+
+for(let i=0; i<shadowLength; i++){
+  shadow += (shadow? ',':'') + i*1+'px ' + i*1+'px 0 #00000005';
+}
+
+elements.forEach(b => {
+  b.style.boxShadow = shadow;
+
+});
+
 function draw() {
     var canvas = document.getElementById('eyes');
     if (canvas.getContext) {

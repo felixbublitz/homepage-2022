@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script src="../src/main.js"></script>
   <link href="../dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 min-h-screen">
+<body class="bg-gray-100 min-h-screen w-full min-w-[320px]  ">
   <img class="hidden" id="avatar" src="../res/avatar.png">
   <img class="hidden" id="eye" src="../res/eye.png">
   
-  <div id="header" class="h-screen">
+  <div id="header" class="h-screen relative min-h-[720px]">
 
-    <div class="absolute overflow-hidden w-full h-full">
-      <div class=" bg-cover sm-bg-left w-[110%] -ml-4 bg-cover h-[110%] blur-lg bg-[url('../res/header-image.jpg')]"></div>
+    <div class="absolute overflow-hidden w-[100%] h-full">
+      <div class=" bg-cover sm-bg-left w-[100%] -ml-4 bg-cover h-[110%] blur-lg bg-[url('../res/header-image.jpg')]"></div>
     </div>
 
 
@@ -25,16 +26,9 @@
 
     </div>
 
- 
-    <div class="absolute flex h-full w-full overflow-hidden opacity-40 blur-sm">
-      <div class="relative m-auto w-[457px] overflow-visible ">
-        <div
-          class="sm-bg-left bg-contain sm:w-[1500px] sm:h-[500px] w-[1500px] h-[500px] sm:ml-[270px] sm:mt-[10px] xl:ml-[0px] xl:mt-[150px] ml-[190px] mt-[-50px]  bg-[url('../res/header-shaddow.png')]">
-        </div>
-      </div>
-    </div>
 
-    <div class="absolute w-full h-full">
+
+    <div class="absolute  w-full h-full">
       <ul class="mt-8 mr-4 list-none text-right">
         <a href="https://www.xing.com/profile/Felix_Bublitz/" target="_blank">
           <li class="cursor-pointer w-12  inline-block sm:mx-1 mx-1 opacity-40 hover:opacity-70"><img src="../res/contact-xing.svg"></li>
@@ -50,20 +44,20 @@
     </div>
 
 
-    <div class="flex h-full">
+    <div class="flex h-full w-full">
       <div class="xl:text-black text-white flex flex-wrap relative m-auto ">
 
 
         <div class="relative basis-full xl:basis-1/4 m-auto flex-1 w-full h-full ">
-          <canvas class="mx-auto  w-96 xl:w-full" width="600px" height="400px" id="eyes"></canvas>
+          <canvas class="mx-auto w-full  sm:w-[612px] xl:w-full" width="622px" height="400px" id="eyes"></canvas>
 
         </div>
 
-        <div class="text-center xl:text-left xl:basis-1/4 flex-1 my-auto">
+        <div class="text-center xl:text-left xl:basis-2/4 flex-1 my-auto">
           <p class="xl:text-7xl text-5xl sm-text-7xl font-exo font-bold mt-8">Hey,</p>
-          <p id="cur" class="xl:text-7xl text-3xl sm-text-7xl mt-4 sm:mt-4 text-4xl font-exo font-light">ich bin Felix
+          <p id="cur" class="xl:text-7xl sm-text-7xl mt-4 sm:mt-4 text-4xl font-exo font-light">ich bin Felix
           </p>
-          <p class="xl:text-2xl xl:mt-4 text-xl sm-text-2xl mt-8 sm:mt-4 text-4xl font-dosis">Softwareentwickler&nbsp;&nbsp;–&nbsp;&nbsp;UX-Designer&nbsp;&nbsp;–&nbsp;&nbsp;Enthusiast</p>
+          <p class="xl:mt-4 mt-8 sm:mt-4 font-light uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-2xl font-dosis">Softwareentwickler&nbsp;&nbsp;–&nbsp;&nbsp;UX-Designer&nbsp;&nbsp;–&nbsp;&nbsp;Enthusiast</p>
 
         </div>
 
@@ -77,9 +71,9 @@
 </div>
 
 
-<div id="content1" class="xl:py-32 py-4 h-full  text-center ">
+<div id="content1" class="xl:py-32 py-16 h-full  text-center ">
 
-  <h2 class="text-2xl text-neutral-500 font-exo xl:my-8 mt-4 text-gray-700 xl:mb-16">Ausbildung</h2>
+  <h2 class="text-3xl text-neutral-500 font-normal xl:my-8 mt-4 font-bold text-gray-700 xl:mb-16">Schulischer und akademischer Bildungsweg</h2>
 
   <ul class="text-left list-none list-none m-auto sm:text-center  w-full xl:w-[1200px]">
     
@@ -94,9 +88,12 @@
 
       <div class="m-auto basis-[calc(100%-46px)] mt-[24px]">
         <div class="rounded-md relative bg-white px-8 py-6">
-          <p class="text-2xl font-exo  mb-1">Abitur</p>
+          <p class="text-2xl font-exo  mb-2">Abitur</p>
           <p class="text-1xl font-dosis">Schwerpunkt: Physik/ Chemie</p>
-          <p class="text-1xl font-dosis">Hamburg</p>
+          <div class="">
+            <img width="16" class="inline align-middle" src="../res/pin.png">
+            <inline class="text-1xl font-dosis align-middle">Hamburg</inline>
+          </div>
         </div>
       </div>
 </div>
@@ -116,8 +113,10 @@
         <div class="rounded-md relative bg-white px-8 py-6">
           <p class="text-2xl font-exo  mb-1">Bachelor</p>
           <p class="text-1xl font-dosis">Informatik</p>
-          <p class="text-1xl font-dosis">TU Berlin</p>
-        </div>
+          <div class="">
+            <img width="16" class="inline align-middle" src="../res/pin.png">
+            <inline class="text-1xl font-dosis align-middle">TU Berlin</inline>
+        <div>
       </div>
 </div>
     </li>
@@ -136,8 +135,10 @@
         <div class="rounded-md relative bg-white px-8 py-6">
           <p class="text-2xl font-exo  mb-1">Master</p>
           <p class="text-1xl font-dosis">Computer Science</p>
-          <p class="text-1xl font-dosis">TU Berlin</p>
-        </div>
+          <div class="">
+            <img width="16" class="inline align-middle" src="../res/pin.png">
+            <inline class="text-1xl font-dosis align-middle">TU Berlin</inline>
+          </div>
       </div>
 </div>
     </li>
