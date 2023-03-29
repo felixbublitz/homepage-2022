@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 
 
 module.exports = {
@@ -15,6 +16,13 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/index.html", to: "index.html" }
+      ],
+    }),
+  ],
 
   module: {
     rules: [
