@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./dist/*.html"],
   theme: {
    
     fontSize: {
@@ -12,6 +12,10 @@ module.exports = {
       '5xl': '36px',
       '6xl': '40px',
       '7xl': '44px',
+      '8xl': '54px',
+      '9xl': '64px',
+
+
     },
     extend: {
       colors : {

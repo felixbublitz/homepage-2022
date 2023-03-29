@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Merriweather+Sans:wght@300&family=Mohave:wght@700&family=Londrina+Solid&family=Exo:wght@200;300;500;700&family=Scope+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+body {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+
+@tailwind utilities;
+
