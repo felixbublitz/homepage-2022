@@ -23,7 +23,12 @@ module.exports = {
         template: 'src/index.html',
         filename: 'index.html',
         inject: false
-    })
+    }),
+
+    new CopyPlugin({
+      patterns: [
+        { from: "src/robots.txt", to: "robots.txt" }
+      ]})
 ],
   module: {
 
