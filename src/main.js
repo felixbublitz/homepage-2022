@@ -1,6 +1,3 @@
-import './style.css'
-
-
 var posx;
 var posy;
 

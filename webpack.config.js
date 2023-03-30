@@ -1,10 +1,11 @@
 const path = require('path');
 const CopyPlugin = require("copy-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
 
-  mode: 'development',
+  mode: 'production',
   entry: path.resolve(__dirname, 'src/main'),
   devServer: {
     static: {
@@ -16,20 +17,49 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
   },
-  plugins: [
-    new CopyPlugin({
-      patterns: [
-        { from: "./src/index.html", to: "index.html" }
-      ],
-    }),
-  ],
 
+  plugins: [
+    new HtmlWebpackPlugin({
+        template: 'src/index.html',
+        filename: 'index.html',
+        inject: false
+    })
+],
   module: {
-    rules: [
+
+    rules: [  
+      {
+        test: /\.html$/i,
+        loader: 'html-loader'
+    },
+   
+   
+    {
+        test: /\.(png|jpg)$/i,
+        type: 'asset/resource',
+        generator: {
+            filename: 'img/[hash][ext]'
+        }
+    },
+    
       {
         test: /\.css$/i,
         include: path.resolve(__dirname, 'src'),
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: ['postcss-loader'],
+        issuer: /index\.html$/,
+        generator: {
+          filename: 'css/[hash][ext]'
+      }
+      },
+
+      {
+        test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: ['style-loader', 'css-loader' ,'postcss-loader'],
+        issuer: /main\.js$/,
+        generator: {
+          filename: 'css/[hash][ext]'
+      }
       },
     ],
   },
