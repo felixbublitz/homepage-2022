@@ -6,11 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Felix Bublitz</title>
   <meta name="description" content="Softwareentwickler aus Berlin. Webentwicklung, Softwareentwicklung, UX-Design. ">
+
   <link href="./style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <script>
+     WebFont.load({
+    google: {
+      families: ['Mohave', 'Scope One', 'Dosis', "Exo"],
+      
+    },
+    active: function() {
+        document.getElementById('content') .style.opacity = 1;
+      }
+  });
+
+  </script>
+  
 </head>
 
-<body class="bg-gray-100  w-full   ">
+<body class="bg-gray-100  w-full  ">
 
+  <div class="absolute overflow-hidden w-[100%] h-full bg-gradient-to-b from-[#232F2C] to-[#171D19]  "></div>
+
+  <div id="content" class="opacity-0 transition ease-in-out duration-1000 ransition-opacity ">
   
   <div id="header" class="pb-16 relative min-h-[720px]">
 
@@ -58,7 +77,7 @@
           <p class="t-shadow xl:text-9xl text-6xl sm-text-7xl font-exo font-bold mt-8">Hey,</p>
           <p id="cur" class="t-shadow xl:text-9xl sm-text-7xl mt-4 sm:mt-4 lg:mt-0 text-4xl font-exo font-light">ich bin Felix
           </p>
-          <p class="t-shadow xl:mt-4 mt-8 sm:mt-4 font-light uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-2xl font-dosis">Softwareentwickler&nbsp;&nbsp;–&nbsp;&nbsp;UI-Designer&nbsp;&nbsp;–&nbsp;&nbsp;Enthusiast</p>
+          <p class="t-shadow xl:mt-4 mt-8 sm:mt-4 font-light uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-2xl font-dosis">Softwareentwickler&nbsp;&nbsp;//&nbsp;&nbsp;UI-Designer&nbsp;&nbsp;//&nbsp;&nbsp;Enthusiast</p>
         </div>
 
       </div>
@@ -88,16 +107,16 @@
 </div>
 
 
-<div id="content1" class=" py-24 md:py-48 h-full  lg:px-0 text-center ">
+<div id="content1" class=" py-24 md:py-52 h-full  lg:px-0 text-center ">
 
   <div class="inline-block   ">
-    <h2 class="-skew-x-1 pb-4 md:mb-24 border-neutral-400 font-mohave font-light text-3xl md:text-6xl inline-block w-full p-0 m-0 -mb-0  text-neutral-800 ">Ausbildung</h2>
+    <h2 class="-skew-x-1 pb-4 md:mb-12 border-neutral-400 font-mohave font-light text-3xl md:text-6xl inline-block w-full p-0 m-0 -mb-0  text-neutral-800 ">Ausbildung</h2>
  
    
   </div>
 
   <ul class="px-4 text-left list-none relative m-auto sm:text-center flex-wrap flex max-w-screen-2xl ">
-    <div class="absolute left-0 top-0 h-12 w-full bg-[#00000011] hidden -skew-x-12 md:block"></div>
+    <div class="absolute left-0 -top-[4px]  h-[56px] w-full bg-[#00000011] hidden -skew-x-12 md:block" style="border-top:1px solid #0000000d; border-bottom:1px solid #0000000d; mask-image: linear-gradient(transparent, black 10%, black 90%, transparent 100%); -webkit-mask-image: linear-gradient( to right,transparent, black 10%, black 90%, transparent 100%);"></div>
 
     <li class="md:my-0 my-4 lg:my-0 w-full md:w-1/3">
       <div class="items-center  w-full flex flex-wrap ">
@@ -105,19 +124,21 @@
       <div class="text-center md:mb-4 md:w-full mr-6 md:mr-0 ">
         <p class="pb-1 md:pb-0 invisible md:inline md:px-2 md:align-middle text-gray-400 text-sm">0000</p>
         <div class="inline-block skew-y-0 md:skew-y-0 md:-skew-x-12 md:align-middle  shadow-md  md:w-32   md:h-12 lg:w-52 rounded-md bg-gradient-1 h-32 w-8" ></div>
-        <p class="md:inline md:px-2 md:align-middle text-gray-400 text-base">2014</p>
+        <p class="md:inline md:px-2 italic md:align-middle text-gray-400 text-base">2014</p>
       </div>
 
-      <div class="m-auto md:w-52 shadow-md   lg:w-72 xl:w-96 md:mt-[72px] flex-grow md:flex-grow-0">
-        <div class="rounded-md w-full  relative bg-gradient-w px-8 lg:px-8 py-6 lg:py-12">
-          <p class="text-xl font-dosis font-bold mb-2">Abitur</p>
-          <p class="text-base font-dosis">Schwerpunkt: Physik/ Chemie</p>
+      <div class="speech-bubble">
+        <div class="rounded-2xl w-full  relative bg-gradient-w px-8 lg:px-8 py-6 lg:py-12">
+          <p class="text-xl font-dosis font-bold mb-1">Alg. Hochschulreife</p>
+          <p class="text-base xl:text-lg font-dosis mb-[1px]">Schwerpunkt: Physik und Chemie</p>
+          <div class="hidden lg:block">
+            </div>
           <div class="">
             <div>
             <img width="16" class="inline align-middle" src="../res/img/pin.png">
-            <inline class="text-1xl font-dosis align-middle">Hamburg</inline>
+            <inline class="text-base xl:text-lg font-dosis ml-[2px] align-middle">Hamburg</inline>
           </div>
-          <div class="mt-8 hidden lg:inline-block w-full h-64 rounded-lg bg-cover" style="background-image: url('img/hamburg.png'); box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.15);">
+          <div class="mt-8 hidden w-full h-64 rounded-lg bg-cover" style="background-image: url('img/hamburg.png'); box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.15);">
 
           </div>
         </div>
@@ -129,24 +150,40 @@
     <li class="md:my-0 my-4 lg:my-0 w-full md:w-1/3">
       <div class="items-center  w-full flex flex-wrap ">
       
-        <div class="text-center md:mb-4 md:w-full mr-6 md:mr-0">
+        <div class="text-center italic md:mb-4 md:w-full mr-6 md:mr-0">
         <p class="pb-1 md:pb-0 md:inline md:px-2 md:align-middle text-gray-400 text-base">2015</p>
         <div class="inline-block md:align-middle shadow-md skew-y-0 md:skew-y-0  md:-skew-x-12  md:h-12 md:w-32  lg:w-52 rounded-md bg-gradient-1 h-32 w-8" ></div>
-        <p class="md:inline md:px-2 md:align-middle text-gray-400 text-base">2019</p>
+        <p class="md:inline italic md:px-2 md:align-middle text-gray-400 text-base">2019</p>
       </div>
 
-      <div class="m-auto shadow-md  md:w-52 lg:w-72 xl:w-96 md:mt-[72px] flex-grow md:flex-grow-0">
-        <div class="rounded-md w-full relative bg-gradient-w px-8 lg:px-8 py-6 lg:py-12">
-          <p class="text-xl font-dosis  font-bold mb-2">Bachelor</p>
-          <p class="text-base font-dosis">Informatik</p>
+      <div class="speech-bubble">
+        <div class="rounded-2xl w-full relative bg-gradient-w px-8 lg:px-8 py-6 lg:py-12">
+          <p class="text-xl font-dosis  font-bold mb-1">Bachelor of Science</p>
+          <p class="text-base xl:text-lg font-dosis mb-[1px]">Informatik</p>
+         
           <div class="">
             <div>
             <img width="16" class="inline align-middle" src="../res/img/pin.png">
-            <inline class="text-base font-dosis align-middle">TU Berlin</inline>
+            <inline class="text-base xl:text-lg font-dosis align-middle ml-[2px]">TU Berlin</inline>
           </div>
-          <div class=" mt-8 hidden lg:inline-block w-full h-64 rounded-lg] bg-cover" style="background-image: url('img/tu-berlin.png'); box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.15);">
+            <div class="mt-8 hidden w-full h-64 rounded-lg] bg-cover" style="background-image: url('img/tu-berlin.png'); box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.15);">
+            
+          </div>
+          </div>
+          
+          <div class="hidden lg:block">
+          <br>
+          <p class="font-bold text-base xl:text-lg font-dosis mb-[1px]">Abschlussarbeit:</p>
+          <p class="text-base xl:text-lg font-dosis mb-[1px]">„Erkennung der Oberflächengüte von Radwegen auf Basis von Smartphonesensordaten“</p>
+          <a href="https://github.com/felixbublitz/simra-road-quality" target="_blank" class="  mt-6 rounded-md inline-block bg-[#363636] text-white py-4 px-8"><img class="inline-block w-6 mr-2" src="../res/img/github.png">Quellcode</a>
+    
 
-        <div>
+          <br>
+        </div>
+
+        
+         
+       
       </div>
 </div>
     </li>
@@ -156,24 +193,37 @@
       <div class="items-center w-full flex flex-wrap ">
       
         <div class="text-center  md:mb-4 md:w-full mr-6 md:mr-0">
-        <p class="pb-1 md:pb-0 md:inline md:px-2 md:align-middle text-gray-400 text-base">2019</p>
+        <p class="pb-1 md:pb-0 italic md:inline md:px-2 md:align-middle text-gray-400 text-base">2019</p>
         <div class="inline-block md:align-middle skew-y-0 md:skew-y-0 md:-skew-x-12 shadow-md  md:h-12 md:w-32  lg:w-52  rounded-md bg-gradient-1 h-32 w-8 " ></div>
-        <p class="md:inline md:px-2 md:align-middle text-gray-400  text-base">2022</p>
+        <p class="md:inline italic md:px-2 md:align-middle text-gray-400  text-base">2022</p>
       </div>
 
-      <div class="m-auto shadow-md md:w-52 lg:w-72 xl:w-96 md:mt-[72px] flex-grow md:flex-grow-0">
-        <div class="rounded-md relative bg-gradient-w px-8 lg:px-8 py-6 lg:py-12">
-          <p class="text-xl font-dosis font-bold mb-2">Master</p>
-          <p class="text-base font-dosis">Computer Science</p>
+      <div class="speech-bubble">
+        <div class="rounded-2xl relative bg-gradient-w px-8 lg:px-8 py-6 lg:py-12">
+          <p class="text-xl font-dosis font-bold mb-1">Master of Science</p>
+          <p class="text-base xl:text-lg font-dosis mb-[1px]">Computer Science</p>
+         
           <div class="">
             <div>
             <img width="16" class="inline align-middle" src="../res/img/pin.png">
-            <inline class="text-base font-dosis align-middle">TU Berlin</inline>
+            <inline class="text-base xl:text-lg ml-[2px] font-dosis align-middle">TU Berlin</inline>
           </div>
-            <div class="mt-8 hidden lg:inline-block w-full h-64 rounded-lg] bg-cover" style="background-image: url('img/tu-berlin.png'); box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.15);">
+            <div class="mt-8 hidden w-full h-64 rounded-lg] bg-cover" style="background-image: url('img/tu-berlin.png'); box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.15);">
             
           </div>
           </div>
+          
+          <div class="hidden lg:block">
+          <br>
+          <p class="font-bold text-base xl:text-lg font-dosis mb-[1px]">Abschlussarbeit:</p>
+          <p class="text-base xl:text-lg font-dosis mb-[1px]">„Evaluation of an efficient web-based video conferencing approach using image reconstruction from face-meshes“</p>
+          <a href="https://github.com/felixbublitz/master-thesis" target="_blank" class="  mt-6 rounded-md inline-block bg-[#363636] text-white py-4 px-8"><img class="inline-block w-6 mr-2" src="../res/img/github.png">Quellcode</a>
+
+</div>
+
+            
+
+       
       </div>
 </div>
     </li>
@@ -188,7 +238,7 @@
 
 
 
-<div id="content1" class=" py-24 md:py-32  text-center bg-gradient-w">
+<div id="content1" class=" py-24 md:py-52  text-center bg-gradient-w">
 
   <div class="inline-block mb-4 pb-4 md:mb-0">
     <h2 class="-skew-x-0  font-mohave font-light text-3xl md:text-7xl inline-block w-full p-0 m-0 -mb-0  text-black ">Skills</h2>
@@ -274,32 +324,37 @@
     <div class="text-center lg:text-left px-8 lg:px-0 text-white bg-gradient-1 ">
 
       <div class="lg:px-16 mx-auto ">
-        <div class="py-24 md:pt-64 pb-0   row flex flex-wrap lg:gap-16">
+        <div class="py-24 md:pt-52 pb-0   row flex flex-wrap lg:gap-16">
           <div class="hidden xl:block w-1/12 text-center "></div>
   
           <div class="w-full lg:w-4/12 xl:w-2/12 text-center  ">
             <img class="w-56 mx-auto pb-8 " src="../res/img/wireframe.png">
           </div>
-          <div class="w-full lg:w-7/12 xl:w-4/12">
-            <h2 class="text-4xl md:text-7xl font-mohave mb-2  font-bold ">
-              Master Thesis
+          <div class="w-full lg:w-7/12 xl:w-7/12 max-w-[1000px]">
+            <h2 class="text-4xl md:text-7xl font-mohave mb-0  font-bold ">
+              Masterarbeit
             </h2>
-            <h3 class="text-base md:text-2xl font-mohave  font-medium md:mb-10 mb-4">
-              Alternative video conferencing approach
+            <h3 class="text-base md:text-2xl font-mohave font-regular  font-medium md:mb-10 mb-4">
+              Alternatives Encoding für Videokonferenzen
   
             </h3>
-            <p class="">Das Ziel dieser Arbeit ist es, die Eignung von landmark-basierten alternativen Übertragungsmethoden für
-              Videokonferenzen mittels Webtechnologien zu überprüfen. Bereits in vielen wissenschaftlichen Publikationen
+            <p class="text-base xl:text-lg">Das Ziel dieser Arbeit ist es, die Eignung von landmark-basierten alternativen Übertragungsmethoden für
+              Videokonferenzen mittels Webtechnologien zu überprüfen.
+              <br>
+              Bereits in vielen wissenschaftlichen Publikationen
               wurden landmark-basierte Ansätze für die bandbreitenreduzierung bei Videokonferenzen untersucht und
-              erfolgreich angewendet. Die Anwendbarkeit für Webanwendungen ist jedoch noch unerforscht. Zu diesem Zweck
-              wurde ein Evaluierungs-Framework entwickelt, das die Realisierung und die Überprüfung verschiedener
+              erfolgreich angewendet. Die Anwendbarkeit für Webanwendungen ist jedoch noch unerforscht.
+              <br><br>
+              Zu diesem Zweck wurde ein Evaluierungs-Framework entwickelt, das die Realisierung und die Überprüfung verschiedener
               alternativer Verfahren ermöglicht. Für einen Proof-of-Concept wurden zwei Ansätze implementiert: Ein
-              Face-Swapping und ein 3D-Puppetry-Ansatz. Es konnte nachgewiesen werden, dass landmark-basierte Verfahren
+              Face-Swapping und ein 3D-Puppetry-Ansatz.
+              <br><br>
+              Es konnte nachgewiesen werden, dass landmark-basierte Verfahren
               zur Reduzierung der Datenmenge für den Einsatz im Web geeignet sind. Lediglich die Verarbeitungszeiten auf
               dem getesteten Smartphone waren zu hoch, um eine flüssige Übertragung zu ermöglichen. Es muss weitergehend
               untersucht werden, ob verbesserte Methoden entwickelt werden können, die eine besserer visuelle Qualität
               und Kompatibilität ermöglichen.</p>
-              <a href="https://git.tu-berlin.de/f.bublitz/master-thesis" target="_blank" class="  my-6 rounded-md inline-block bg-white text-black py-2 px-8">view on GitHub</a>
+              <a href="https://git.tu-berlin.de/f.bublitz/master-thesis" target="_blank" class="  my-6 rounded-md inline-block bg-white text-black py-2 px-8">auf GitHub ansehen</a>
   
           </div>
   
@@ -348,29 +403,28 @@
   <div class=" text-center lg:text-left text-neutral-700 ">
 
     <div class="mx-auto overflow-hidden lg:px-16 xl:px-0">
-      <div class="py-24 row flex xl:justify-end flex-wrap  gap-16">
+      <div class="py-52 row flex xl:justify-end flex-wrap  gap-16">
         <div class="w-full lg:w-4/12 xl:w-3/12  mt-[0px]  text-center">
-          <img  class="inline-block  w-64 xl:w-[360px]" src="../res/img/didb.png">
+          <img  class="inline-block  w-64 xl:w-[360px]" src="../res/img/didb.jpg">
         </div>
 
         <div class="w-full px-12 lg:px-0 lg:w-7/12 xl:w-4/12">
-          <h2 class="leading-10 text-4xl md:text-7xl font-mohave mb-2  font-bold ">
+          <h2 class=" text-4xl md:text-7xl font-mohave mb-0  font-bold ">
             Deutschkurs in der Box</h2>
-          <h3 class="leading-6 text-base md:text-2xl font-mohave  font-light mb-4 md:mb-10">
+          <h3 class="text-base md:text-2xl font-mohave  font-light mb-4 md:mb-10">
             Projektwerkstatt an der TU Berlin</h3>
-          <p class="">Im Rahmen studentischen Engagements entstand die Projektwerkstatt “Deutschkurs in der Box”. Ziel war es,
+          <p class="text-base xl:text-lg">Im Rahmen studentischen Engagements entstand die Projektwerkstatt “Deutschkurs in der Box”. Ziel war es,
             die
             in Folge der Flüchtlingskrise 2015 enstanden Initiativen für kostenlose Deutschkurse für Geflüchtete zu
             unterstüzen. Hierfür wurden Arbeitsmaterialien erstellt und kostenlos über eine Webportal bereitgestellt.
-          </p>
-          <p class="">Das Portal ermöglichte es Initiativen gewünschte Arbeitsblätter zu durchstöbern oder explizit nach ihnen
+          <br><br>
+          Das Portal ermöglichte es Initiativen gewünschte Arbeitsblätter zu durchstöbern oder explizit nach ihnen
             zu suchen. Gewünschte Arbeitsblätter ließen sich in gewünschter Stückzahl zu einem Druckauftrag
-            zusammenfassen und zum Abschluss gebündelt drucken.</p>
-
-          <p class="">Über ein eigens entwickeltes CMS ließen sich Arbeitsblätter hochladen, verlinkungen zwischen
-            Arbeitsblättern etablieren, sowie Blogbeiträge editieren.</p>
-
-          <p class="" >Das Projekt wurde 2018 mit dem Nachhaltigkeitspreis der TU Berlin ausgezeichnet. Leider lief die Förderung
+            zusammenfassen und zum Abschluss gebündelt drucken.
+            Über ein eigens entwickeltes CMS ließen sich Arbeitsblätter hochladen, verlinkungen zwischen
+            Arbeitsblättern etablieren, sowie Blogbeiträge editieren.
+            <br><br>
+            Das Projekt wurde 2018 mit dem Nachhaltigkeitspreis der TU Berlin ausgezeichnet. Leider lief die Förderung
           durch die TU im Jahr 2020 aus.</p>
           <iframe class="mt-12 md:w-[500px] w-full inline-block rounded-xl shadow-md" width="490" height="276" src="https://www.youtube.com/embed/xQUL_jBfqck?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -391,30 +445,33 @@
 
   <div class="text-center relative lg:text-left text-white bg-gradient-2 px-8 ">
     
-    <div class="py-24 md:pt-64 pb-40 sm:pb-52 md:pb-64 lg:pb-96   row flex flex-wrap lg:gap-16">
+    <div class="py-24 md:pt-52 pb-40 sm:pb-52 md:pb-64 lg:pb-96   row flex flex-wrap lg:gap-16">
       <div class="hidden xl:block w-1/12 text-center "></div>
 
       <div class="w-full lg:w-4/12 xl:w-2/12 text-center  ">
         <img class="w-56 mx-auto pb-8 " src="../res/img/drinkit-logo.png">
       </div>
       <div class="w-full lg:w-7/12 xl:w-4/12">
-        <h2 class="text-4xl md:text-7xl font-mohave mb-2  font-bold ">
+        <h2 class="text-4xl md:text-7xl font-mohave mb-0  font-bold ">
           DrinkIT!
         </h2>
         <h3 class="text-base md:text-2xl font-mohave  font-medium md:mb-10 mb-4">
-          Cross-Plattform Party Game 
+          Cross-Plattform Party Spiel 
 
         </h3>
-        <p>Mit DrinkIt! wird deine Party garantiert zum Highlight!
+        <p class="text-base xl:text-lg">Mit DrinkIt! wird deine Party garantiert zum Highlight!
           Messe dich mit deinen Freunden in verschiedenen Herausforderungen und hüte dich vor der Bestrafung!
          
           </p>
+          <br>
 
-          <ul class="mt-8">
+          <ul class="text-base xl:text-lg" class="mt-8">
             <li>• Spiele gleichzeitig mit 12 deiner Freunde</li>
             <li>• Beweise dich in 5 unterschiedlichen Herausforderungen</li>
             <li>• Kompatibel mit Android und iOS</li>
           </ul>
+
+          <a href="https://drinkit.felixbublitz.de" target="_blank" class="  my-6 rounded-md inline-block bg-white text-black py-2 px-8">jetzt spielen</a>
 
          
 
@@ -444,14 +501,19 @@
             <li class="py-0 px-1 my-1 mx-[2px] rounded-md inline-block"  >OpenStreetMaps</li>
             <li class="py-0 px-1 my-1 mx-[2px] rounded-md inline-block"  >Android</li>
           </ul>
-        <p class="text-md  ">
+        <p class="text-base xl:text-lg ">
           Im Rahmen des Projektes SimRa der TU Berlin wurde eine Methode entwickelt, um die Oberflächengüte von Radwegen anhand von Smartphonesensordaten zu bestimmen. Hierzu wurden Beschleunigungsdaten des Gyroskopes ausgewertet und zusammen mit anderen Daten zu einer Karte der Oberflächengüte aggregiert.
         </p>
         <div class="mt-8">
-          <a href="https://www.digital-future.berlin/forschung/projekte/simra/" target="_blank" class="inline-block">
+          <a href="https://www.digital-future.berlin/forschung/projekte/simra/" target="_blank" class="inline-block mx-4">
             <img class="inline-block w-6 mb-2" src="../res/img/link.png">
             <p class="text-xs">Projekt Website</p>
           </a>
+          <a href="https://github.com/felixbublitz/simra-road-quality" target="_blank" class="inline-block mx-4">
+            <img class="inline-block w-6 mb-2" src="../res/img/github.png">
+            <p class="text-xs">Quellcode</p>
+          </a>
+          
         </div>
 
       </li>
@@ -466,7 +528,7 @@
             <li class="py-0 px-1 my-1 mx-[2px] rounded-md inline-block">Android</li>
           </ul>
 
-        <p class="text-md    ">
+        <p class="text-base xl:text-lg   ">
           Master-Projekt, Entwurf und Umsetzung in einer Kleingruppe für das Unternehmen Trustami. Entwicklung einer Augmented Reality Anwendung zur Visualisierung von Produkten
         </p>
         <div class="mt-8">
@@ -488,8 +550,8 @@
             <li class="py-0 px-1 my-1 mx-[2px] rounded-md inline-block"  >A-Frame</li>
             <li class="py-0 px-1 my-1 mx-[2px] rounded-md inline-block"  >Three.JS</li>
           </ul>
-        <p class="text-md   ">
-          Enwticklung einer Markerlosen Erkennung und Annotation von Werbeplakaten. Erkennung der Plakate über OpenCV und Darstellung mittels A-Frame          </p>
+        <p class="text-base xl:text-lg  ">
+          Entwicklung einer Markerlosen Erkennung und Annotation von Werbeplakaten. Erkennung der Plakate über OpenCV und Darstellung mittels A-Frame          </p>
 
           <div class="mt-8">
         <a href="files/Immersive_Web__Markerless_Detection_and_Enrichment_of_Billboards.pdf" target="_blank" class="inline-block">
@@ -534,16 +596,16 @@
 
 </div>
 
-<div id="footer2" class="relative flex text-white bg-neutral-800 px-3 w-full py-12 text-left">
+<div id="footer2" class="relative flex flex-wrap text-white bg-neutral-800 px-3 w-full text-left py-8">
 
-  <div class=" text-left pl-8 pr-16  ">
+  <div class="text-left pl-8 pr-16  py-4 ">
     <p class="text-xl font-mohave pb-1 ">Links</p>
     <p class="text-sm">Impressum</p>
     <p class="text-sm">Datenschutzerklärung</p>
 
   </div>
 
-  <div>
+  <div class="px-8 pr-16 py-4 ">
     <p class="text-xl font-mohave ">Kontakt</p>
     <ul class="mt-2  mr-10 list-none text-right">
       <a href="https://www.xing.com/profile/Felix_Bublitz/" target="_blank">
@@ -560,7 +622,7 @@
   </div>
 </div>
 
-
+</div>
 </body>
 
 </html>

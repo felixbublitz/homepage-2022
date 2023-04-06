@@ -9,6 +9,12 @@ let shadowLength = 20;
 let elements = document.querySelectorAll('.t-shadow');
 let shadow = '';
 
+WebFont.load({
+  google: {
+    families: ['Droid Sans', 'Droid Serif']
+  }
+});
+
 for(let i=0; i<shadowLength; i++){
   shadow += (shadow? ',':'') + i*1+'px ' + i*1+'px 0 #00000005';
 }

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Merriweather+Sans:wght@300&family=Mohave:wght@700&family=Londrina+Solid&family=Exo:wght@200;300;500;700&family=Scope+One&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,6 +13,28 @@ img {
     -o-user-drag: none;
     user-drag: none;
   }
+
+
+
+
+@layer components {
+
+  .speech-bubble{
+    @apply relative m-auto md:w-52 shadow-md   lg:w-72 xl:w-96 md:mt-[72px] flex-grow md:flex-grow-0 ;
+  }
+
+  .speech-bubble:after {
+    @apply hidden md:inline;
+
+    content: '';
+    position: absolute;
+    top: -28px;
+    margin-left: -28px;
+    border: 28px solid #ffffff00;
+    border-bottom-color: #ffffff;
+    border-top: 0;
+   }
+}
 
 @tailwind utilities;
 
