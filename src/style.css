@@ -16,8 +16,19 @@ img {
 
 
 
-
 @layer components {
+
+  h3{
+    @apply mt-4 italic;
+  }
+
+  h4{
+    @apply mt-2;
+  }
+
+  p{
+    @apply font-mohave;
+  }
 
   .speech-bubble{
     @apply relative m-auto md:w-52 shadow-md   lg:w-72 xl:w-96 md:mt-[72px] flex-grow md:flex-grow-0 ;

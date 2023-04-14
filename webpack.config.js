@@ -23,7 +23,11 @@ module.exports = {
         template: 'src/index.html',
         filename: 'index.html',
         inject: false
-    }),
+    }), new HtmlWebpackPlugin({
+      template: 'src/impress.html',
+      filename: 'impress.html',
+      inject: false
+  }),
 
     new CopyPlugin({
       patterns: [
@@ -54,7 +58,7 @@ module.exports = {
         test: /\.css$/i,
         include: path.resolve(__dirname, 'src'),
         use: ['postcss-loader'],
-        issuer: /index\.html$/,
+
         generator: {
           filename: 'css/[hash][ext]'
       }
