@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: deploy to prod
 
 on:
   push:
@@ -26,3 +26,16 @@ jobs:
       run: |
         npm install
         npx webpack
+
+
+    - name: Push files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: felixbublitz.de
+        server-dir: /main/
+        local-dir: ./dist/
+        protocol: ftps
+        port: 21
+        username: ftp_webserver_prod
+        password: ${{ secrets.ftp_prod_password }}
+
