@@ -34,7 +34,8 @@ module.exports = {
         { from: "res/img/hamburg.png", to: "img/hamburg.png" },
         { from: "res/img/tu-berlin.png", to: "img/tu-berlin.png" },
         { from: "res/Immersive_Web__Markerless_Detection_and_Enrichment_of_Billboards.pdf", to: "files/Immersive_Web__Markerless_Detection_and_Enrichment_of_Billboards.pdf" },
-        { from: "src/robots.txt", to: "robots.txt" }
+        { from: "src/robots.txt", to: "robots.txt" },
+        { from: "vbc", to: "vbc" },
       ]})
 ],
   module: {
